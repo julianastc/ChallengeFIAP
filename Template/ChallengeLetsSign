@@ -1,0 +1,17 @@
+# Desenvolvimento do front-end da aplicação web da sua solução.
+
+Requisitos FIAP:
+- Como os métodos de validação de autenticidade poderão ser exibidos nas telas. 
+    Exemplos: tela de reconhecimento de biometria, captura da geolocalização,  assinatura através de tokens,  demonstração de como o usuário visualiza o documento a ser assinado e como essas informações ficarão dispostas no layout.
+    Lembrando: o desafio precisa explorar novas abordagens que fortaleçam a segurança e a confiabilidade das assinaturas eletrônicas.
+- Utilize HTML, CSS, Bootstrap – Estruture seu layout em HTML, organize as seções e enriqueça a interface com os estilos disponíveis em CSS e Bootstrap. 
+- Deixe as páginas dinâmicas e interativas com a utilização de JavaScript.
+- Dar foco na experiência do usuário, com um design responsivo. 
+
+To-do: 
+• Tela de reconhecimento facial
+• Tela de leitura de digital
+• Tela de visualização do documento (adicionar na sidebar - baixar documento (?))
+• Tela para anexar documento (?)
+• Geolocalização (?)
+
