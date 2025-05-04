@@ -31,6 +31,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="#" class="nav-link text-white" id="downloadLink">
+                        <i class="bi bi-cloud-download me-2"></i>
+                        Baixar documento
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="digital.html" class="nav-link text-white">
                         <i class="bi bi-fingerprint me-2"></i>
                         Assinatura Digital
@@ -46,6 +52,12 @@
                     <a href="#" class="nav-link text-white" id="signatureCounter">
                         <i class="bi bi-pencil-square me-2"></i>
                         0 / 2 Assinaturas
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#locationModal">
+                        <i class="bi bi-map me-2"></i>
+                        Geolocalização
                     </a>
                 </li>
             </ul>
@@ -76,6 +88,23 @@
 
                 <div class="d-flex justify-content-center gap-3 mt-4">
                     <button id="saveButton" class="btn btn-success">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-primary text-white">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="locationModalLabel">Aviso de Geolocalização</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    A localização da sua assinatura será levada em consideração para análise e registro.
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Entendi</button>
                 </div>
             </div>
         </div>
