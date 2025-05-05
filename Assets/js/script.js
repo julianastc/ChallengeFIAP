@@ -74,4 +74,12 @@ document.addEventListener('DOMContentLoaded', function () {
             }, intervalTime);
         });
     }
-}); 
+});
+
+document.getElementById('confirmButton').addEventListener('click', function () {
+    alert('Você confirmou que está nesta localização!');
+});
+
+document.getElementById('denyButton').addEventListener('click', function () {
+    alert('Você indicou que não está nesta localização!');
+});
