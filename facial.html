@@ -65,28 +65,59 @@
                 <i class="bi bi-list"></i>
             </button>
 
-            <div class="main-content p-4">
-                <h2>Demonstração FIAP</h2>
-                <p>Bem-vindo(a) à assinatura eletrônica de documentos do LetsSign.<br>
-                    Os próximos passos servirão de guia durante o processo de assinatura.</p>
-                <div class="progress mb-3" style="height: 5px;">
-                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <h5>Dicas:</h5>
-                <ul>
-                    <li>Escolha um local bem iluminado e de fundo claro.</li>
-                    <li>Evite acessórios que cubram o rosto.</li>
-                </ul>
+            <div class="main-content p-3 p-md-4">
+                <div class="container-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-8">
+                            <h2 class="text-center text-md-start">Demonstração FIAP</h2>
+                            <p class="text-center text-md-start">
+                                Bem-vindo(a) à assinatura eletrônica de documentos do LetsSign.<br>
+                                Os próximos passos servirão de guia durante o processo de assinatura.
+                            </p>
 
-                <div class="camera-area text-center mt-4 p-3 border rounded">
-                    <p>Pressione seu dedo no leitor digital.</p>
-                    <img src="Assets/img/camera.png" alt="Área da câmera" id="cameraImagePlaceholder"
-                        class="img-fluid rounded">
-                </div>
+                            <div class="progress mb-3" style="height: 5px;">
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
 
-                <div class="text-center mt-4">
-                    <button id="startButton" class="btn btn-success">Iniciar</button>
+                            <div class="row">
+                                <div class="col-12 col-md-6 order-md-2">
+                                    <div
+                                        class="camera-area text-center p-3 p-lg-4 border rounded bg-light mb-3 mb-md-0">
+                                        <p class="mb-3">Pressione seu dedo no leitor digital.</p>
+                                        <img src="Assets/img/camera.png" alt="Área da câmera"
+                                            id="cameraImagePlaceholder" class="img-fluid rounded"
+                                            style="max-height: 300px;">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-6 order-md-1">
+                                    <div class="tips-container p-3 p-lg-4">
+                                        <h5>Dicas:</h5>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><i
+                                                    class="bi bi-check-circle-fill text-success me-2"></i>Escolha um
+                                                local bem iluminado e de fundo claro.</li>
+                                            <li class="mb-2"><i
+                                                    class="bi bi-check-circle-fill text-success me-2"></i>Evite
+                                                acessórios que cubram o rosto.</li>
+                                            <li class="mb-2"><i
+                                                    class="bi bi-check-circle-fill text-success me-2"></i>Mantenha o
+                                                rosto centralizado na imagem.</li>
+                                            <li><i class="bi bi-check-circle-fill text-success me-2"></i>Certifique-se
+                                                de que seu rosto está totalmente visível.</li>
+                                        </ul>
+
+                                        <div class="d-grid gap-2 d-md-block text-center text-md-start mt-3">
+                                            <button id="startButton" class="btn btn-success btn-lg px-4 py-2">
+                                                <i class="bi bi-play-fill me-2"></i>Iniciar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
