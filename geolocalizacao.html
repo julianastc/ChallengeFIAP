@@ -19,7 +19,7 @@
         <div id="sidebar" class="sidebar d-none d-md-flex flex-column flex-shrink-0 p-3">
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link text-white active">
+                    <a href="paginainicial.html" class="nav-link text-white active">
                         <i class="bi bi-house me-2"></i>
                         Página Inicial
                     </a>
@@ -30,40 +30,26 @@
                         Baixar documento
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="facial.html" class="nav-link text-white">
-                        <i class="bi bi-camera me-2"></i>
-                        Assinatura Facial
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="digital.html" class="nav-link text-white">
-                        <i class="bi bi-fingerprint me-2"></i>
-                        Assinatura Digital
-                    </a>
-                </li>
+               
                 <li>
                     <a href="#" class="nav-link text-white" id="signatureCounter">
                         <i class="bi bi-pencil-square me-2"></i>
                         0 / 1 Assinaturas
                     </a>
                 </li>
-                <li>
-                    <a href="geolocalizacao.html" class="nav-link text-white">
-                        <i class="bi bi-map me-2"></i>
-                        Geolocalização
-                    </a>
-                </li>
+                
             </ul>
             <div class="mt-auto p-3 text-center">
                 <a href="index.html">
                     <img src="Assets/img/logo.png" alt="LetsSign Logo" id="logoImage" style="max-width: 150px;">
                 </a>
+                <a href="index.html" class="btn btn-sm btn-outline-light mt-3 w-100">
+                    Sair da conta
+                </a>
             </div>
         </div>
 
         <div class="content-wrapper flex-grow-1">
-            <!-- Botão de hambúrguer adicionado aqui -->
             <button class="btn btn-primary d-md-none m-3" type="button" id="sidebarToggle">
                 <i class="bi bi-list"></i>
             </button>
@@ -73,11 +59,41 @@
                     <h1 class="mb-3">Você se encontra nessa localização?</h1>
                     <p class="mb-4">Av. Paulista - Bela Vista, São Paulo - SP - Brasil</p>
                     <img src="Assets/img/geolocalizacao.png" alt="Localização">
-                    <div class="d-grid mt-4">
-                        <button class="btn btn-primary-custom" id="confirmButton">Sim, me encontro nessa
+                    <div class="flex-botoes" >
+                        <button class="botao-login" id="confirmButton">Sim, me encontro nessa
                             localização</button>
-                        <button class="btn btn-danger-custom" id="denyButton">Não, me encontro em outro lugar</button>
+                        <button class="botao-fechar" id="denyButton">Não, me encontro em outro lugar</button>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body position-relative text-center">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-2"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                    Documento assinado com sucesso!
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="downloadSuccessModal" tabindex="-1" aria-labelledby="downloadSuccessModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body position-relative text-center">
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-2"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                    Documento baixado com sucesso!
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
                 </div>
             </div>
         </div>
