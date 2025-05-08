@@ -46,16 +46,10 @@ body {
     background-color: #f8f9fa;
 }
 
-.camera-area {
-    max-width: 400px;
-    margin: 0 auto;
-    background-color: #e9ecef;
-}
-
 .face-placeholder {
     width: 180px;
     height: 230px;
-    border: 2px dashed #6c757d;
+    border: 2px dashed #f8f9fa;
     border-radius: 50% / 60%;
     display: flex;
     align-items: center;
@@ -111,17 +105,22 @@ body {
 #successModal .modal-footer,
 #downloadModal .modal-content,
 #downloadModal .modal-header,
-#downloadModal .modal-footer {
+#downloadModal .modal-footer,
+#downloadSuccessModal .modal-content,
+#downloadSuccessModal .modal-header,
+#downloadSuccessModal .modal-footer {
     border: none;
 }
 
 #successModal .modal-body,
-#downloadModal .modal-body {
+#downloadModal .modal-body,
+#downloadSuccessModal .modal-body {
     padding-top: 2rem;
 }
 
 #successModal .modal-footer .btn-primary,
-#downloadModal .modal-footer .btn-primary {
+#downloadModal .modal-footer .btn-primary,
+#downloadSuccessModal .modal-footer .btn-primary {
     background-color: #3a2c84;
     border-color: #3a2c84;
 }
@@ -131,7 +130,10 @@ body {
 #successModal .modal-footer .btn-primary:active,
 #downloadModal .modal-footer .btn-primary:hover,
 #downloadModal .modal-footer .btn-primary:focus,
-#downloadModal .modal-footer .btn-primary:active {
+#downloadModal .modal-footer .btn-primary:active,
+#downloadSuccessModal .modal-footer .btn-primary:hover,
+#downloadSuccessModal .modal-footer .btn-primary:focus,
+#downloadSuccessModal .modal-footer .btn-primary:active {
     background-color: #2c2166;
     border-color: #2c2166;
     box-shadow: 0 0 0 0.25rem rgba(58, 44, 132, 0.5);
@@ -191,6 +193,10 @@ body {
     display: block;
 }
 
+#sidebarToggle{
+    display: none;
+}
+
 @media (max-width: 768px) {
     .main-content {
         padding: 1rem;
@@ -199,4 +205,105 @@ body {
     .content-box {
         padding: 1rem;
     }
+
+    #sidebarToggle {
+    display: block;
+    background-color: #3a2c84;
+    border-radius: 20%;
+    color: white;
+    justify-content: center; 
+    margin-top: 7px;
+    margin-left: 13px;
+    border: 0;
+    padding: 10px;
+    padding-bottom: 7px;
+}
+
+.sidebarToggle:hover{
+    background-color: #2c2166;
+}
+
+}
+
+.tips {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 0.8rem;
+    color: #6c757d;
+    text-align: left;
+    padding: 0;
+}
+
+.tips p{
+    line-height: 0;
+}
+
+
+.botao-login{  
+    background-color: #3a2c84;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px; 
+    text-decoration: none;
+    width: 80%;
+    justify-content: center;
+    border: 0;
+}
+
+.botao-login:hover{
+    background-color: #2c2166;
+}
+
+.botao-fechar{
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px; 
+    text-decoration: none;
+    width: 80%;
+    justify-content: center;
+    border: 0;
+    margin-top: 10px;
+}
+
+.botao-fechar:hover{
+    background-color: #a80520;
+}
+
+.navbar{
+    background-color: #3a2c84;
+}
+
+.navbar-brand{
+    color: white;
+    
+}
+
+/* Top Navigation links */
+.top-nav a {
+    color: #495057; /* Default link color for light backgrounds */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar-light .top-nav a:hover, 
+.navbar-light .top-nav a.active {
+    color: #0d2c4f; /* Dark blue for hover/active on light background */
+    border-bottom: 2px solid #0d2c4f;
+}
+
+/* Override for dark navbars */
+.navbar-dark .top-nav a {
+    color: rgba(255, 255, 255, 0.75); /* Lighter color for dark background */
+}
+
+.navbar-dark .top-nav a:hover, 
+.navbar-dark .top-nav a.active {
+    color: #ffffff; /* White for hover/active on dark background */
+    border-bottom: 2px solid #ffffff; /* Optional: white underline */
+}
+
+.flex-botoes{    
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
 }
