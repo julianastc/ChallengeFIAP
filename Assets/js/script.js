@@ -233,6 +233,14 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+
+    // Animação sequencial para todos os elementos com slide-in-title ou slide-in-left
+    var slideEls = document.querySelectorAll('.slide-in-title, .slide-in-left');
+    slideEls.forEach(function(el, idx) {
+        setTimeout(function() {
+            el.classList.add('visible');
+        }, 200 + idx * 180);
+    });
 });
 
 document.getElementById('confirmButton').addEventListener('click', function () {
