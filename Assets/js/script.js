@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function () {
             saveButton.disabled = true;
 
             const stepsDigital = [
-                { text: "Pressione seu dedo no leitor digital.", progress: 0, delay: 100, animDuration: 100 }, // Initial text state
+                { text: "Pressione seu dedo no leitor digital.", progress: 0, delay: 100, animDuration: 100 },
                 { text: "Mantenha o dedo pressionado", progress: 45, delay: 2000, animDuration: 2000 },
                 { text: "Retire o dedo", progress: 50, delay: 2000, animDuration: 1000 },
                 { text: "Coloque o dedo novamente", progress: 90, delay: 2000, animDuration: 1000 },
@@ -233,6 +233,13 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+
+    var slideEls = document.querySelectorAll('.slide-in-title, .slide-in-left');
+    slideEls.forEach(function(el, idx) {
+        setTimeout(function() {
+            el.classList.add('visible');
+        }, 200 + idx * 180);
+    });
 });
 
 document.getElementById('confirmButton').addEventListener('click', function () {
