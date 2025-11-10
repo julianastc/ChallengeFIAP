@@ -4,6 +4,10 @@
 Este é um projeto acadêmico de frontend desenvolvido para a atividade Challenge da FIAP. O objetivo é criar um sistema web para a empresa LetsSign, especializada em assinaturas eletrônicas. A aplicação permite que usuários façam upload e download de documentos, realizem assinaturas digitais utilizando leitor facial (via câmera) e leitor digital (via celular ou dispositivo externo) com confirmação de geolocalização, além de gerenciarem contratos de forma simples, segura e intuitiva. 
 O projeto é apenas frontend e não inclui um backend para armazenamento persistente, autenticação real ou integração com servidores de assinatura eletrônica.
 
+## Reconhecimento e Premiação
+
+Esse projeto destacou-se entre 125 trabalhos inscritos, sendo escolhido como um dos 6 finalistas do Challenge. Posteriormente, no evento Next FIAP, realizado em 08/11/2025, ele foi premiado, conquistando o 3º lugar geral.
+
 ## Funcionalidades
 
 - Assinatura Eletrônica:
